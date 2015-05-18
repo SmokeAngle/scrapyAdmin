@@ -1,0 +1,142 @@
+2015-05-09 12:17:56 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 F:\web\web\scrapyAdmin\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 F:\web\web\scrapyAdmin\yii(31): yii\base\Application->run()
+#3 {main}
+2015-05-09 12:17:56 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SmokeAngle0421\\AppData\\Roaming'
+    'com_adobe_versioncue_client_applocale' => 'zh_CN'
+    'com_adobe_versioncue_client_appname' => 'AdobeDrive'
+    'com_adobe_versioncue_client_appversion' => '1.0.0'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SMOKEANGLE'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SmokeAngle0421'
+    'LOCALAPPDATA' => 'C:\\Users\\SmokeAngle0421\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;D:\\Python27\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files (x86)\\WinSCP\\;D:\\Program Files (x86)\\OpenVPN\\bin;D:\\Program Files (x86)\\Java\\jre7\\bin;E:\\tools;D:\\Python27\\Scripts;D:\\wamp\\bin\\php\\php5.5.12;.;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\SMOKEA~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SMOKEA~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SMOKEANGLE'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SMOKEANGLE'
+    'USERNAME' => 'SmokeAngle0421'
+    'USERPROFILE' => 'C:\\Users\\SmokeAngle0421'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'F:\\web\\web\\scrapyAdmin\\'
+    'PHP_SELF' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'SCRIPT_NAME' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'SCRIPT_FILENAME' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'PATH_TRANSLATED' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1431166676.7464
+    'REQUEST_TIME' => 1431166676
+    'argv' => [
+        0 => 'F:\\web\\web\\scrapyAdmin\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-05-09 12:18:17 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "fixtrue".' in F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('fixtrue', Array)
+#1 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('fixtrue', Array)
+#2 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 F:\web\web\scrapyAdmin\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "fixtrue".' in F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('fixtrue', Array)
+#1 F:\web\web\scrapyAdmin\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 F:\web\web\scrapyAdmin\yii(31): yii\base\Application->run()
+#3 {main}
+2015-05-09 12:18:17 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\SmokeAngle0421\\AppData\\Roaming'
+    'com_adobe_versioncue_client_applocale' => 'zh_CN'
+    'com_adobe_versioncue_client_appname' => 'AdobeDrive'
+    'com_adobe_versioncue_client_appversion' => '1.0.0'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SMOKEANGLE'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\SmokeAngle0421'
+    'LOCALAPPDATA' => 'C:\\Users\\SmokeAngle0421\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;D:\\Python27\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files (x86)\\WinSCP\\;D:\\Program Files (x86)\\OpenVPN\\bin;D:\\Program Files (x86)\\Java\\jre7\\bin;E:\\tools;D:\\Python27\\Scripts;D:\\wamp\\bin\\php\\php5.5.12;.;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\SMOKEA~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\SMOKEA~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SMOKEANGLE'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SMOKEANGLE'
+    'USERNAME' => 'SmokeAngle0421'
+    'USERPROFILE' => 'C:\\Users\\SmokeAngle0421'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'F:\\web\\web\\scrapyAdmin\\'
+    'PHP_SELF' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'SCRIPT_NAME' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'SCRIPT_FILENAME' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'PATH_TRANSLATED' => 'F:\\web\\web\\scrapyAdmin\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1431166697.7673
+    'REQUEST_TIME' => 1431166697
+    'argv' => [
+        0 => 'F:\\web\\web\\scrapyAdmin\\yii'
+        1 => 'fixtrue'
+    ]
+    'argc' => 2
+]
