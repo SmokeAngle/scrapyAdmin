@@ -25,11 +25,15 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'Scrapy 采集系统',
+                'brandLabel' => 'Scrapy 管理后台',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
+                    'tag' => 'div',
+                    'class' => 'header navbar-default  navbar-fixed-top',
                 ],
+                'innerContainerOptions' => [
+                    'class' => 'header-inner',
+                ]
             ]);
             $menuItems = [
                 ['label' => 'Home', 'url' => ['/site/index']],
@@ -43,6 +47,14 @@ AppAsset::register($this);
                     'linkOptions' => ['data-method' => 'post']
                 ];
             }
+            
+            echo Nav::widget([
+                'options' => ['class' => 'navbar-nav navbar-left'],
+                'items' => [
+                    [ 'label' => '用户权限管理', 'url' => ['/user-management/user/index'] ]
+                ],
+            ]);
+            
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
@@ -50,40 +62,41 @@ AppAsset::register($this);
             NavBar::end();
         ?>
 
-        <div class="container-fluid">
+        <div id="mainContent" class="container-fluid">
 			<!-- left menu bof -->
-				<div class='col-sm-3 padding-t-80'>
+<!-- 				<div class='col-sm-3 padding-t-80'> -->
 					<?php
-						use webvimark\modules\UserManagement\components\GhostMenu;
-						use webvimark\modules\UserManagement\UserManagementModule;
+// 						use webvimark\modules\UserManagement\components\GhostMenu;
+// 						use webvimark\modules\UserManagement\UserManagementModule;
 
-						echo GhostMenu::widget([
-								'encodeLabels'=>false,
-								'activateParents'=>true,
-								'items' => [
-									[ 'label' => 'Backend routes', 'items'=>UserManagementModule::menuItems() ],
-									[ 'label' => 'Frontend routes',
-									  'items'=>[
-											['label'=>'Login', 'url'=>['/user-management/auth/login']],
-											['label'=>'Logout', 'url'=>['/user-management/auth/logout']],
-											['label'=>'Registration', 'url'=>['/user-management/auth/registration']],
-											['label'=>'Change own password', 'url'=>['/user-management/auth/change-own-password']],
-											['label'=>'Password recovery', 'url'=>['/user-management/auth/password-recovery']],
-											['label'=>'E-mail confirmation', 'url'=>['/user-management/auth/confirm-email']],
-										],
-									],
-								],
-							]);
-						?>
-				</div>
+// 						echo GhostMenu::widget([
+// 								'encodeLabels'=>false,
+// 								'activateParents'=>true,
+// 								'items' => [
+// 									[ 'label' => 'Backend routes', 'items'=>UserManagementModule::menuItems() ],
+// 									[ 'label' => 'Frontend routes',
+// 									  'items'=>[
+// 											['label'=>'Login', 'url'=>['/user-management/auth/login']],
+// 											['label'=>'Logout', 'url'=>['/user-management/auth/logout']],
+// 											['label'=>'Registration', 'url'=>['/user-management/auth/registration']],
+// 											['label'=>'Change own password', 'url'=>['/user-management/auth/change-own-password']],
+// 											['label'=>'Password recovery', 'url'=>['/user-management/auth/password-recovery']],
+// 											['label'=>'E-mail confirmation', 'url'=>['/user-management/auth/confirm-email']],
+// 										],
+// 									],
+// 								],
+// 							]);
+// 						?>
+<!-- 				</div> -->
 			<!-- left menu eof -->
 			<!--  right main bof -->
-				<div class='col-sm-8'>
+<!-- 				<div class='col-sm-8'> -->
+					
 					<?= Breadcrumbs::widget([
 			            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 			        ]) ?>
 			        <?= $content ?>
-				</div>
+<!-- 				</div> -->
         	<!-- rigght main eof   -->
         </div>
     </div>
